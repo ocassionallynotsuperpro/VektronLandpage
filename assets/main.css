@@ -25,7 +25,7 @@
         /* These styles control the top navigation area */
         
         header {
-            background-color: #fff;
+            background-color: rgb(239, 191, 4);
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             position: fixed;
             width: 100%;
@@ -34,10 +34,10 @@
         }
         
         .header-top {
-            background-color: #f8f8f8;
+            background-color: rgb(239, 191, 4));
             padding: 8px 0;
             font-size: 14px;
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid rgb(239, 194, 4);
         }
         
         .header-top-content {
@@ -76,7 +76,7 @@
         }
         
         .logo img {
-            height: 60px;
+            height: 120px;
             margin-right: 10px;
         }
         
@@ -289,11 +289,18 @@
         
         .about-image {
             flex: 1;
+            margin-left: auto;
         }
         
         .about-image img {
             width: 100%;
             border-radius: 5px;
+            left: auto;
+        }
+
+        .left-side {
+            margin-right: auto;
+            margin-left: 0;
         }
         
         /* ===== SERVICES SECTION ===== */
@@ -353,7 +360,7 @@
         }
         
         .product-card {
-            background-color: #fff;
+            background-color: #ff4b4b;
             border-radius: 5px;
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
@@ -367,17 +374,19 @@
         .product-image {
             height: 200px;
             overflow: hidden;
+            position-area: center;
         }
         
         .product-image img {
-            width: 100%;
+            width: 50%;
             height: 100%;
-            object-fit: cover;
+            object-fit: fill;
             transition: transform 0.5s;
+            -o-object-position: center;
         }
         
         .product-card:hover .product-image img {
-            transform: scale(1.1);
+            transform: scale(1.7);
         }
         
         .product-info {
@@ -771,3 +780,73 @@
                 flex-direction: column;
             }
         }
+
+          /* Table Section */
+    .table-container {
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: var(--card-shadow);
+    }
+
+    .table-header {
+        background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        color: white;
+        padding: 20px;
+    }
+
+    .table-header h3 {
+        font-size: 1.5rem;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    thead {
+        background-color: #f8f9fa;
+    }
+
+    th {
+        padding: 15px;
+        text-align: left;
+        font-weight: 600;
+        color: var(--text-color);
+    }
+
+    td {
+        padding: 15px;
+        border-top: 1px solid #eee;
+    }
+
+    tbody tr {
+        transition: background-color 0.2s;
+    }
+
+    tbody tr:hover {
+        background-color: #f8f9fa;
+    }
+
+    .team-position {
+        font-weight: 700;
+        color: var(--primary-color);
+    }
+
+    .team-name-cell {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .team-logo-small {
+        width: 30px;
+        height: 30px;
+        background-color: var(--primary-color);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 0.8rem;
+    }
